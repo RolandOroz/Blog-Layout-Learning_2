@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+    <head>
+        <title>News Log Layout</title> <!-- Name the News app -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!--html will be maximum compatible with older browsers.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--display types-->
+      <!--<link rel="stylesheet" type="text/css" href="2ColumnLayoutLess600pxOnTop.css" media="screen" />-->
+        <link rel="alternate stylesheet" title="" href="">  <!--alternative style sheet (can be many)-->
+        <!--bgn******************************preconnect & dns-prefetch exmpl************************************************-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <!--This process includes DNS resolution, as well as-->
+        <!--establishing the TCP connection, and performing-->
+        <!--the TLS handshake—if served over HTTPS.-->
+        <!--Combining the two provides an opportunity to -->
+        <!--reduce latency of cross-origin requests.-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+        <!--******************************preconnect & dns-prefetch exmpl************************************************end-->
+
+
+        <link rel="stylesheet" href="styles/reset.css"> <!--only for dev-->
+        <link rel="stylesheet" href="styles/debug.css"> <!--only for dev-->
+
+        <style>
+            article {
+                display: grid;
+                grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr;
+
+                height: 100vh; /* temp fix */
+
+                padding: 0.5in 0;
+            }
+            article * { grid-column: start / end; }
+
+            @media (max-width: 8.5in) {
+                article {grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;}
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+    <article>
+        <p class="debug-center">ARTICLE</p>
+    </article>
+
+    <article>
+        <p class="debug-center">ARTICLE</p>
+    </article>
+
+    </body>
+</html>
