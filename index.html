@@ -21,35 +21,42 @@
 
 
         <link rel="stylesheet" href="styles/reset.css"> <!--only for dev-->
-        <link rel="stylesheet" href="styles/debug.css"> <!--only for dev-->
+        <link rel="stylesheet" href="styles/-debug.css"> <!--only for dev-->
 
-        <style>
-            article {
-                display: grid;
-                grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr;
-
-                height: 100vh; /* temp fix */
-
-                padding: 0.5in 0;
-            }
-            article * { grid-column: start / end; }
-
-            @media (max-width: 8.5in) {
-                article {grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;}
-            }
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="stylesheet" href="img/article-image.css">
 
 
-        </style>
     </head>
 
     <body>
-    <article>
-        <p class="debug-center">ARTICLE</p>
-    </article>
+    <article id="solar-storm">
+        <h1><a href="#solar-storm"><em>Solar storms</em> can wreak havoc. We need better space weather forecasts</a></h1>
+        <h2>Scientists are expanding efforts to probe outbursts from the sun and understand their occasionally Earthbound paths</h2>
 
-    <article>
-        <p class="debug-center">ARTICLE</p>
+        <time datetime="02-26-2021">FEBRUARY 26, 2021</time>
+        <p>
+            Since December 2019, the sun has been moving into a busier part of its cycle, when increasingly intense pulses of energy can shoot out in all directions. Some of these large bursts of charged particles head right toward Earth. Without a good way to anticipate these solar storms, we’re vulnerable. A big one could take out a swath of our communication systems and power grids before we even knew what hit us.
+        </p>
+        <p>
+            A recent near miss occurred in the summer of 2012. A giant solar storm hurled a radiation-packed blob in Earth’s direction at more than 9 million kilometers per hour. The potentially debilitating burst quickly traversed the nearly 150 million kilometers toward our planet, and would have hit Earth had it come just a week earlier. Scientists learned about it after the fact, only because it struck a NASA satellite designed to watch for this kind of space weather.
+        </p>
+        <p>
+            That 2012 storm was the most intense researchers have measured since 1859. When a powerful storm hit the Northern Hemisphere in September of that year, people were not so lucky. Many telegraph systems throughout Europe and North America failed, and the electrified lines shocked some telegraph operators. It came to be known as the Carrington Event, named after British astronomer Richard Carrington, who witnessed intensely bright patches of light in the sky and <a href="https://babel.hathitrust.org/cgi/pt?id=njp.32101081655332&view=1up&seq=351">recorded what he saw.</a>
+        </p>
+
+        <h3>Ebbs and flows</h3>
+        <p>
+            When scientists talk about space weather, they’re usually referring to two things: the solar wind, a constant stream of charged particles flowing away from the sun, and coronal mass ejections, <a href="https://www.sciencenews.org/article/coronal-mass-ejection-magnetic-sun-plasma-eruption">huge outbursts of charged particles</a>, or plasma, blown out from the sun’s outer layers (SN Online: 3/7/19). Some other phenomena, like high-energy particles called cosmic rays, also count as space weather, but they don’t cause much concern.
+        </p>
+
     </article>
 
     </body>
 </html>
+
+
+<!--<img class="size-4" src="https://www.sciencenews.org/wp-content/uploads/2021/02/022721_space-weather_feat-1440x700.jpg">
+<img class="size-3" src="https://www.sciencenews.org/wp-content/uploads/2021/02/022721_space-weather_feat-1440x700.jpg">
+<img class="size-2" src="https://www.sciencenews.org/wp-content/uploads/2021/02/022721_space-weather_feat-1440x700.jpg">
+<img class="size-1" src="https://www.sciencenews.org/wp-content/uploads/2021/02/022721_space-weather_feat-1440x700.jpg">-->
